@@ -75,9 +75,9 @@ def final_pred(y_pred, forecast_datan):
 
 if st.button("Classify"):
     if option == "Linear Regression":
-        st.success(final_pred(linear_model.predict(Forecast_data_val),forecast_datan))
+        st.write(final_pred(linear_model.predict(Forecast_data_val),forecast_datan))
     elif option == "k-NN":
-        st.success(final_pred(knn_model.predict(Forecast_data_val),forecast_datan))
+        st.write(final_pred(knn_model.predict(Forecast_data_val),forecast_datan))
     
     else:
-        st.success(final_pred(DT_model.predict(Forecast_data_val),forecast_datan))        
+        st.write(final_pred(DT_model.predict(Forecast_data_val),forecast_datan))        
