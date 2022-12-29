@@ -4,10 +4,10 @@ import plotly.express as px
 import streamlit as st
 import datetime as dt
 
-linear_model = pickle.load(open('/home/karan/Desktop/Deployment/DemandFore/linear_model.pkl','rb'))
-knn_model = pickle.load(open('/home/karan/Desktop/Deployment/DemandFore/knn_model.pkl','rb'))
-DT_model = pickle.load(open('/home/karan/Desktop/Deployment/DemandFore/DT_model.pkl','rb'))
-#XG_model = pickle.load(open('/home/karan/Desktop/KARAN/Data Science/PROJECTS/DEmand FOrcasting/Deployment/XG_model.pkl','rb'))
+linear_model = pickle.load(open('linear_model.pkl','rb'))
+knn_model = pickle.load(open('knn_model.pkl','rb'))
+DT_model = pickle.load(open('DT_model.pkl','rb'))
+#XG_model = pickle.load(open('XG_model.pkl','rb'))
 
 st.title("Demand Forecasting")
 html_temp="""
